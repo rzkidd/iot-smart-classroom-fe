@@ -22,6 +22,15 @@ function toggleSwing (id) {
     }
 }
 
+function togglePower (id) {
+    let ctx = document.getElementById(id)
+    if(ctx.classList.contains('text-warning')){
+        ctx.classList.replace('text-warning', 'text-secondary')
+    } else if (ctx.classList.contains('text-secondary')){
+        ctx.classList.replace('text-secondary', 'text-warning')
+    }
+}
+
 function plusMinus (id, type){
     let ctx = document.getElementById(id)
     let value = parseInt(ctx.innerText)
